@@ -1,0 +1,32 @@
+#Question 3
+____________
+import numpy as np
+from numpy import pi
+
+#Question 3, Part 1: Vector
+mylist=[10,30,100,300,1000]
+for n in mylist: #where n is the sample space
+ x=np.linspace(0,pi/2,n) #vector 
+ print (x) #prints n evenly spaced numbers between 0 and pi/2
+
+ #Question 3, Part 2: Integral
+ f=np.cos(x) #define function
+ x0=0
+ x1=pi/2 
+ dx=(x1-x0)/n #length of x interval
+ integral=np.sum(f)*dx
+ print ('The integral is ' + repr(integral) + ' for n=' + repr(n))
+ 
+ error=1-integral 
+ # since the integral of function with the given bounds is supposed to be 1
+ print ('The error is ' + repr(error) + ' for n=' + repr(n))
+ # err is proportional  to (n**-5/4) 
+ # as n increases the error decreases
+ _________________________________________________________________________________________________________________
+ 
+ #Question 4
+ ____________
+ 
+ 
+ 
+ 
