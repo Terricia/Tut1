@@ -36,9 +36,13 @@ plt.show()
 print (err) #gives a negative exponential graph
 __________________________________________________________________________________________________________________
  
- #Question 4
+ #Question 6
  _______________
- 
+ # log plot of errors for the standard sum
+ plt.plot(mylist,err)
+plt.yscale('log')
+plt.show()
+print (err) #gives a log graph
  
  
  
